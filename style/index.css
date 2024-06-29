@@ -1,0 +1,441 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* table {
+    width: 70%;
+    margin: 50px auto;
+    
+}
+
+tr {
+    
+    background-color: #c4c4c4;
+}
+th,td {
+    padding: 20px;
+    text-align: start;
+} */
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 150px 20px;
+    max-width: 1600px;
+    margin: 76px auto;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.8px;
+    text-align: center;
+    margin-top: 65px;
+
+}
+
+button {
+    margin-top: 25px;
+    width: 254px;
+    height: 55px;
+    top: 160px;
+    left: 606px;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+
+    /* opacity: 0px; */
+
+}
+
+
+
+.box {
+    margin-top: 25px;
+    width: 364px;
+    min-height: 474px;
+    border: 2px solid black;
+    margin-left: 20px;
+
+
+
+
+
+
+}
+
+.box .img {
+    text-align: center;
+    padding: 19px 0 0;
+}
+
+.box .img .img_size {
+    width: 50%;
+    height: 200px;
+
+
+}
+
+.box .text {
+    background: #000000;
+    color: #FFFFFF;
+
+}
+
+.box .text h1 {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: start;
+}
+
+.box .text p {
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF8F;
+    font-family: Roboto;
+    padding-left: 30px;
+    padding-right: 37px;
+    text-align: start;
+
+
+}
+
+.box .text .img_svg {
+    font-size: 24px;
+    padding-left: 34px;
+    padding-top: 16px;
+    font-family: Roboto;
+
+}
+
+.box .text button {
+    width: 305px;
+    height: 55px;
+    background-color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 24px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.img_svg {
+    display: flex;
+    gap: 23px;
+}
+
+
+dialog {
+    width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 14px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    animation: fade .5s ease inherit;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* dialog {
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    width: 800px;
+    padding: 20px;
+    border: 2px solid black;
+    min-height: 800px;
+    
+
+}
+
+.show {
+    right: 0px !important;
+}
+
+
+#closed {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px solid;
+    margin-left: 20px;
+    background-color: blueviolet;
+}
+
+
+.korzina1 {
+    text-align: start;
+    padding-left: 20px;
+}
+
+
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.plus {
+    width: 25px;
+    height: 25px;
+    border-radius: 0
+}
+
+.minus {
+    width: 25px;
+    height: 25px;
+    border-radius: 0
+}
+
+.scroll img {
+    width: 70px;
+    height: 100px;
+}
+
+.remove {
+    width: 60px;
+    height: 20px;
+    border-radius: 0
+}
+
+
+
+
+
+.div1 .div2 .div4 .div3 {
+    width: 2000px;
+    height: 150px;
+} */
+
+.active {
+    background-color: #1680f8;
+    color: white;
+}
+
+
+/* General Dialog Styles */
+dialog {
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    width: 800px;
+    padding: 20px;
+    border: 2px solid black;
+    min-height: 800px;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 90vh;
+    
+}
+
+.show {
+    right: 0px !important;
+}
+
+
+#closed {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#closed:hover {
+    background-color: darkviolet;
+}
+
+.korzina1 {
+    text-align: start;
+    padding-left: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+
+.scroll img {
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.plus,
+.minus {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plus:hover,
+.minus:hover {
+    background-color: #ddd;
+}
+
+
+.remove {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: blue
+    ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove:hover {
+    background-color: #d32f2f;
+}
+
+
+.active {
+    background-color: #1680f8;
+    color: white;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+
+
+.div1 {
+    grid-column: 1 / span 1;
+}
+
+.div2 {
+    grid-column: 2 / span 1;
+    text-align: start;
+}
+
+.div4 {
+    grid-column: 3 / span 1;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.div3 {
+    grid-column: 4 / span 1;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    text-align: center;
+}
+
+
+#total {
+    padding: 20px;
+    text-align: end;
+}
+
+#summa {
+    font-size: 30px;
+    font-family: Roboto;
+}
+
+#total_summa {
+    font-size: 30px;
+    font-family: Roboto;
+}
